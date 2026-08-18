@@ -8,9 +8,6 @@ export interface DailyBalance {
   closingBalance: number;
 }
 
-function getDateKey(date: Date): string {
-  return date.toISOString().split("T")[0];
-}
 
 export function calculateDailyBalances(
   transactions: Transaction[],
